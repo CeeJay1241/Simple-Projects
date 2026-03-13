@@ -39,7 +39,7 @@ def print_report():
     print(f"Money: ${report['account']:.2f}")
 
 
-def is_resource_sufficient(order_name: str) -> (bool, str):
+def is_resource_sufficient(order_name: str) -> tuple[bool, str]:
     """Return (True, '') if enough resources, otherwise (False, resource_name)."""
     ingredients = MENU[order_name]["ingredients"]
     for item, needed in ingredients.items():
