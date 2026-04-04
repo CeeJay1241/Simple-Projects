@@ -43,6 +43,15 @@ class Snake(Turtle):
         self.new_seg.goto(pos)
         self.segments.append(self.new_seg)
 
+    def reset(self):
+        for seg in self.segments:
+            seg.goto(1000,1000)
+        self.segments.clear()
+        self.gen_snake()
+        self.head = self.segments[0]
+
+        
+
     def turn_up(self):
         """Turn the snake head upward unless it is currently moving down."""
         if self.head.heading() != DOWN and self.next_heading is None:
