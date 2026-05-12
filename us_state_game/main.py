@@ -16,11 +16,8 @@ data = pandas.read_csv("2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv")
 # print(monday_temp)
 
 data_color = data["Primary Fur Color"].to_list()
-print(data_color)
 
-fur = {"Gray": [],
-       "Cinnamon": [],
-       "Black": []}
+fur = {}
 
 g = 0
 c = 0
@@ -33,7 +30,11 @@ for i in data_color:
     elif i == "Black":
         b += 1
 
+fur["Gray"] = [g]
+fur["Cinnamon"] = [c]
+fur["Black"] = [b]
 
+#print(fur)
+fur_color_count = pandas.DataFrame(fur)
 
-
-fur_color_count = pandas.DataFrame()
+print(fur_color_count)
