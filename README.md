@@ -70,6 +70,7 @@ A collection of Python mini-projects built while learning core programming conce
 | `time` | `sleep()` for game loop timing |
 | `pathlib` | File path handling, reading/writing files |
 | `string` | Character constants |
+| `tkinter` | GUI windows, labels, buttons, entry fields, grid layout |
 
 ### Design Patterns
 - **Game loop** — update, detect, respond
@@ -158,3 +159,10 @@ A geography quiz where you type U.S. state names and they appear on a map. Misse
 `NATO_alphabet_project/`
 Converts any word into its NATO phonetic alphabet equivalent (e.g. "Hello" → `['Hotel', 'Echo', 'Lima', 'Lima', 'Oscar']`).
 **Key concepts:** `pandas`, dictionary comprehension with `iterrows()`, list comprehension, string iteration
+
+---
+
+### 12. Miles to Km Converter
+`mile_to_converter_gui_project/`
+A GUI app that converts miles to kilometers using a tkinter window with an input field, labels, and a calculate button.
+**Key concepts:** `tkinter`, GUI layout with grid, Entry and Label widgets, Button commands, event-driven functions
