@@ -166,3 +166,10 @@ Converts any word into its NATO phonetic alphabet equivalent (e.g. "Hello" → `
 `mile_to_converter_gui_project/`
 A GUI app that converts miles to kilometers using a tkinter window with an input field, labels, and a calculate button.
 **Key concepts:** `tkinter`, GUI layout with grid, Entry and Label widgets, Button commands, event-driven functions
+
+---
+
+### 13. Pomodoro Timer
+`pomodoro/`
+A GUI Pomodoro productivity timer with work sessions, short breaks, and long breaks.
+**Key concepts:** `tkinter`, constants, timer mechanism, countdown logic
