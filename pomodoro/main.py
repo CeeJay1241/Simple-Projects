@@ -1,5 +1,8 @@
 from tkinter import *
 import math
+import os
+
+os.chdir(os.path.dirname(__file__))  # set working directory to the script's folder
 
 # ---------------------------- CONSTANTS ------------------------------- #
 PINK = "#e2979c"
